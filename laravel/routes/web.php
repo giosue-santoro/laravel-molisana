@@ -13,10 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/', function() {
+    $pasta = config('pasta');
+
+    return view('home', [
+        'pastaArray' => $pasta
+    ]);
 });
+
 
 Route::get('/products/{id}', function($id) {
     return view('products', ['idProduct' => $id]);
 });
+

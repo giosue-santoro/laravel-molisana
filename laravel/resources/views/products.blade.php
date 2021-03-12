@@ -139,17 +139,32 @@ $array = json_decode($data, true);
 </head>
 <body>
 
-    <div id="app">
+  <div id="app">
+      
+    <header>
+      <div class="logo"> 
+        <img src="{{asset('img/logo.png')}}">
+      </div>
+    </header>
 
-        <main>
-          Pasta numero {{ $idProduct }} <br />
-          {{ $array[$idProduct]['titolo'] }} <br />
-          <img src="{{ $array[$idProduct]['src-h'] }}"> <br />
-          <img src="{{ $array[$idProduct]['src-p'] }}"> <br />
-          {{ $array[$idProduct]['descrizione'] }} <br />
-        </main>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Prodotti</a></li>
+        <li><a href="/">News</a></li>
+      </ul>
+    </nav>
 
-    </div>
+
+    <main>
+      Pasta numero {{ $idProduct }} <br />
+      {{ $array[$idProduct]['titolo'] }} <br />
+      <img src="{{ $array[$idProduct]['src-h'] }}"> <br />
+      <img src="{{ $array[$idProduct]['src-p'] }}"> <br />
+      {{ $array[$idProduct]['descrizione'] }} <br />
+    </main>
+
+  </div>
 
 </body>
 </html>
