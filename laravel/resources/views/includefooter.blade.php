@@ -58,7 +58,7 @@
 
       </div>
     </div>
-    <img src="{{asset('img/footer-bg.jpg')}}" style="width:100%">
+    <img src="{{asset('img/footer-bg.jpg')}}" style="width:100%; display:block;">
   </footer>
 </div>
 </body>
