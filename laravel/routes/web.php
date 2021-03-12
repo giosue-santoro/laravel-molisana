@@ -22,8 +22,19 @@ Route::get('/', function() {
 Route::get('/products/{id?}', function($id) {
     $pasta = config('pasta');
     
+    if (empty($id)) {
+        return redirect('/');
+      }
+      if ($id > count($pasta)) {
+        abort(404);
+      }
+
     return view('products', ['idProduct' => $id], ['array'=> $pasta ]);
 });
 
+Route::get('/', function() {
+    $pasta = config('pasta');
 
+    return view('footer', ['pastaArray' => $pasta]);
+});
 

@@ -33,6 +33,71 @@ nav {
 }
 
 main {
+    position: relative;
+    
+    .next {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 40%;
+      right: 5%;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #dcedf2;
+      color: #fff;
+      font-size: 40px;
+      cursor: pointer;
+      line-height: 48px;
+      text-align: center;
+      text-indent: -2px;
+      transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+  
+      &:active {
+        transform: translate(0, 3px) scale(1.2);
+      }
+
+      i {
+        color: #fff;
+      }
+    }
+
+    .prev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #dcedf2;
+        font-size: 40px;
+        cursor: pointer;
+        line-height: 48px;
+        text-align: center;
+        text-indent: -2px;
+        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+        &:hover {
+          transform: scale(1.2);
+        }
+    
+        &:active {
+          transform: translate(0, 3px) scale(1.2);
+        }
+
+        i {
+            color: #fff;
+        }
+    }
+
     .container-main {
         height: 1400px;
         width: 100%;
