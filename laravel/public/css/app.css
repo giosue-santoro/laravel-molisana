@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+  text-decoration: none;
 }
 
 header {
@@ -23,12 +24,12 @@ nav ul {
 }
 nav ul li {
   padding: 10px;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 main .container-main {
-  height: 1200px;
+  height: 1550px;
   width: 100%;
 }
 main .container-main .centered-container {
@@ -36,24 +37,49 @@ main .container-main .centered-container {
   margin: 0 auto;
 }
 main .container-main .centered-container h2 {
-  color: blue;
+  color: #0a3779;
   margin: 10px 0;
 }
 main .container-main .centered-container .pasta-container {
   display: inline-block;
 }
 main .container-main .centered-container .pasta-container a img {
-  height: 200px;
+  height: 270px;
+  padding: 10px;
+}
+main .product-container img {
+  display: block;
+  width: 100%;
+}
+main .product-container .pasta-title {
+  color: #0a3779;
+  background-color: #b7dae5;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 0;
+}
+main .product-container .description-container {
+  background-color: #b7dae5;
+}
+main .product-container .description-container .pasta-description {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: #0a3779;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 footer {
   color: #757272;
+  padding: 20px 0 0 0;
 }
 footer .logo {
   margin-left: 10%;
 }
 footer .footer-container {
-  width: 50%;
+  width: 60%;
   margin-left: 10%;
   display: flex;
   justify-content: space-between;

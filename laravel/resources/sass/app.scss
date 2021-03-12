@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    text-decoration: none;
 }
 
 header {
@@ -25,7 +26,7 @@ nav {
 
         li {
             padding: 10px;
-            font-size: 22px;
+            font-size: 30px;
             font-weight: bold;
         }
     }
@@ -33,7 +34,7 @@ nav {
 
 main {
     .container-main {
-        height: 1200px;
+        height: 1550px;
         width: 100%;
 
         .centered-container{
@@ -41,7 +42,7 @@ main {
             margin: 0 auto;
 
             h2 {
-                color: blue;
+                color: #0a3779;
                 margin: 10px 0;
             }
 
@@ -49,11 +50,41 @@ main {
                 display: inline-block;
 
                 a {
-
+                    
                     img{
-                        height: 200px;
+                        height: 270px;
+                        padding: 10px;
                     }
                 }
+            }
+        }
+    }
+
+    .product-container {
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .pasta-title {
+            color: #0a3779;
+            background-color: #b7dae5;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .description-container{
+            background-color: #b7dae5;
+
+            .pasta-description {
+                width: 80%;
+                margin: 0 auto;
+                padding-bottom: 30px;
+                color: #0a3779;
+                font-weight: bold;
+                font-size: 22px;
             }
         }
     }
@@ -61,13 +92,14 @@ main {
 
 footer {
     color: rgb(117, 114, 114);
+    padding: 20px 0 0 0;
 
     .logo {
         margin-left: 10%;
     }
 
     .footer-container {
-        width: 50%;
+        width: 60%;
         margin-left: 10%;
         display: flex;
         justify-content: space-between;
