@@ -1,15 +1,17 @@
 @include('header')
   <main>
     
-    <div class="prev">
+    
       @if (($idProduct) == 1)
         <a href="/products/{{count($array)}}">
       @else
         <a href="/products/{{$idProduct - 1}}">
       @endif
-        <i class="fas fa-chevron-left"></i>
+        <div class="prev">
+          <i class="fas fa-chevron-left"></i>
+        </div>
       </a>
-    </div>
+    
 
     <div class="product-container">   
       <div class="pasta-title">
@@ -26,14 +28,16 @@
       </div>
     </div>
 
-    <div class="next">
+    
       @if (($idProduct) == count($array))
         <a href="/products/1">
       @else
         <a href="/products/{{$idProduct + 1}}">
       @endif
-        <i class="fas fa-chevron-right"></i>
+        <div class="next">
+          <i class="fas fa-chevron-right"></i>
+        </div>
       </a>
-    </div>
+    
   </main>
 @include('includefooter')
