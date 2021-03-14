@@ -1,3 +1,5 @@
+@import "./breakpoints/breakpoints.scss";
+
 *{
     margin: 0;
     padding: 0;
@@ -28,6 +30,63 @@ nav {
             padding: 10px;
             font-size: 30px;
             font-weight: bold;
+            
+            a:visited {
+                text-decoration: none;
+                color: #0a3779;
+            }
+        }
+    }
+
+    .hamburger {
+        width: 40px;
+        margin: 0 auto;
+        display: none;
+        div {
+            width: 40px;
+            height: 4px;
+            background-color: #0a3779;
+            margin: 5px 0;
+        }
+    }
+
+    @include media('<=phone', '<tablet') {
+        ul {
+            display: none;
+        }
+
+        .hamburger {
+            width: 40px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            display: block;
+
+            div {
+                width: 40px;
+                height: 4px;
+                background-color: #0a3779;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    @include media('>tablet', '<desktop') {
+        ul {
+            display: none;
+        }
+
+        .hamburger {
+            width: 40px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            display: block;
+
+            div {
+                width: 40px;
+                height: 4px;
+                background-color: #0a3779;
+                margin: 5px 0;
+            }
         }
     }
 }
@@ -153,7 +212,96 @@ main {
             }
         }
     }
+
+    @include media('<=phone', '<tablet') {
+        .container-main {
+            height: 2400px;
+    
+            .centered-container{
+                .pasta-container {
+                    a {
+                        img{
+                            height: 180px;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-container {
+            .description-container{
+                .pasta-description {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .next {
+            top: 50%;
+            right: 0;
+            width: 25px;
+            height: 40px;
+            font-size: 18px;
+            border-radius: 0%;
+        }
+      
+        .prev {
+            top: 50%;
+            left: 0;
+            width: 25px;
+            height: 40px;
+            font-size: 18px;
+            border-radius: 0%;
+        }
+    }
+
+    @include media('>tablet', '<desktop') {
+        .next {
+            top: 50%;
+            right: 0;
+            width: 70px;
+            height: 100px;
+            font-size: 32px;
+            border-radius: 0%;
+            transform: translateY(-50%);
+        }
+      
+        .prev {
+            top: 50%;
+            left: 0;
+            width: 70px;
+            height: 100px;
+            font-size: 32px;
+            border-radius: 0%;
+            transform: translateY(-50%);
+        }
+
+        .container-main {
+            height: 1550px;
+
+            .centered-container{
+                .pasta-container {
+                    a {
+                        img{
+                            height: 190px;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-container {
+            .description-container{
+                .pasta-description {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
+
 
 footer {
     color: rgb(117, 114, 114);
@@ -175,6 +323,29 @@ footer {
             
             li {
                 padding: 2px 0;
+            }
+        }
+    }
+
+    @include media('<=phone', '<tablet') {
+        .footer-container {
+            display: block;
+        }
+    }
+
+    @include media('>tablet', '<desktop') {
+        .footer-container {
+            width: 60%;
+            margin-left: 10%;
+            display: block;
+            
+            ul {
+                list-style: none;
+                margin: 5px 0;
+                
+                li {
+                    padding: 2px 0;
+                }
             }
         }
     }
