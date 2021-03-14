@@ -230,10 +230,13 @@ main .product-container .description-container .pasta-description {
     transform: translateY(-50%);
   }
   main .container-main {
-    height: 1550px;
+    height: 1700px;
+  }
+  main .container-main .centered-container {
+    width: 90%;
   }
   main .container-main .centered-container .pasta-container a img {
-    height: 190px;
+    height: 210px;
     padding: 10px;
   }
   main .product-container .description-container .pasta-description {
