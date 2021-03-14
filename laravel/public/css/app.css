@@ -47,7 +47,7 @@ nav .hamburger div {
   background-color: #0a3779;
   margin: 5px 0;
 }
-@media (max-width: 360px) and (max-width: 767px) {
+@media (max-width: 425px) {
   nav ul {
     display: none;
   }
@@ -64,7 +64,24 @@ nav .hamburger div {
     margin: 5px 0;
   }
 }
-@media (min-width: 769px) and (max-width: 1365px) {
+@media (min-width: 427px) and (max-width: 766px) {
+  nav ul {
+    display: none;
+  }
+  nav .hamburger {
+    width: 40px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: block;
+  }
+  nav .hamburger div {
+    width: 40px;
+    height: 4px;
+    background-color: #0a3779;
+    margin: 5px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1349px) {
   nav ul {
     display: none;
   }
@@ -182,12 +199,12 @@ main .product-container .description-container .pasta-description {
   font-weight: bold;
   font-size: 22px;
 }
-@media (max-width: 360px) and (max-width: 767px) {
+@media (max-width: 425px) {
   main .container-main {
-    height: 2400px;
+    height: 2500px;
   }
   main .container-main .centered-container .pasta-container a img {
-    height: 180px;
+    height: 190px;
     padding: 10px;
   }
   main .product-container .description-container .pasta-description {
@@ -210,7 +227,37 @@ main .product-container .description-container .pasta-description {
     border-radius: 0%;
   }
 }
-@media (min-width: 769px) and (max-width: 1365px) {
+@media (min-width: 427px) and (max-width: 766px) {
+  main .container-main {
+    height: 3850px;
+  }
+  main .container-main .centered-container {
+    width: 90%;
+  }
+  main .container-main .centered-container .pasta-container a img {
+    height: 300px;
+    padding: 10px;
+  }
+  main .next {
+    top: 30%;
+    right: 0;
+    width: 50px;
+    height: 80px;
+    font-size: 32px;
+    border-radius: 0%;
+    transform: translateY(-50%);
+  }
+  main .prev {
+    top: 30%;
+    left: 0;
+    width: 50px;
+    height: 80px;
+    font-size: 32px;
+    border-radius: 0%;
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 768px) and (max-width: 1349px) {
   main .next {
     top: 50%;
     right: 0;
@@ -230,7 +277,7 @@ main .product-container .description-container .pasta-description {
     transform: translateY(-50%);
   }
   main .container-main {
-    height: 1700px;
+    height: 1680px;
   }
   main .container-main .centered-container {
     width: 90%;
@@ -241,6 +288,18 @@ main .product-container .description-container .pasta-description {
   }
   main .product-container .description-container .pasta-description {
     font-size: 18px;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1365px) {
+  main .container-main {
+    height: 1160px;
+  }
+  main .container-main .centered-container {
+    width: 90%;
+  }
+  main .container-main .centered-container .pasta-container a img {
+    height: 190px;
+    padding: 10px;
   }
 }
 
@@ -264,22 +323,18 @@ footer .footer-container ul {
 footer .footer-container ul li {
   padding: 2px 0;
 }
-@media (max-width: 360px) and (max-width: 767px) {
+@media (max-width: 425px) {
   footer .footer-container {
     display: block;
   }
 }
-@media (min-width: 769px) and (max-width: 1365px) {
+@media (min-width: 427px) and (max-width: 766px) {
   footer .footer-container {
-    width: 60%;
-    margin-left: 10%;
     display: block;
   }
-  footer .footer-container ul {
-    list-style: none;
-    margin: 5px 0;
-  }
-  footer .footer-container ul li {
-    padding: 2px 0;
+}
+@media (min-width: 768px) and (max-width: 1349px) {
+  footer .footer-container {
+    display: block;
   }
 }
